@@ -4,8 +4,13 @@
     padding: 0;
 }
 
+@font-face {
+    font-family: Inter;
+    src: url(./Inter-VariableFont_slnt\,wght.ttf);
+}
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Inter', sans-serif;
     background-color: #f3f4f6;
     color: #333;
 }
@@ -58,10 +63,14 @@ header nav a {
 }
 
 .hero-section {
-    text-align: center;
-    padding: 4rem 2rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    padding: 2rem;
     background: linear-gradient(135deg, #4e54c8, #8f94fb);
     color: white;
+    min-height: 100vh;
 }
 
 .cta-button {
@@ -77,6 +86,9 @@ header nav a {
 .featured-products {
     padding: 3rem 2rem;
     text-align: center;
+}
+.featured-products h2{
+    margin-bottom: 2rem;
 }
 
 .product-grid {
@@ -94,7 +106,7 @@ header nav a {
 }
 
 .product-card:hover {
-    transform: translateY(-10px);
+    transform: scale(1.01);
 }
 
 .product-card img {
@@ -122,4 +134,50 @@ footer {
     color: #fff;
     padding: 2rem;
     text-align: center;
+}
+footer *{
+    margin: 1rem 0;
+}
+footer a{
+    color: #4e54c8;
+    text-decoration: 0;
+}
+footer input{
+    background-color: #fff;
+    border: 0;
+    padding: .5rem;
+    border-radius: 5px 0 0 5px;
+}
+footer button{
+    background-color: #4e54c8;
+    border: 0;
+    padding: .5rem;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 0 5px 5px 0;
+}
+
+.chart-modal{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000cc;
+    top: 0;
+}
+.chart-modal div{
+    background-color: #fff;
+    padding: 5rem;
+    border-radius: 10px;
+    font-weight: 500;
+}
+.chart-modal div  span{
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    color: #fff;
+    font-size: 4rem;
+    cursor: pointer;
 }
