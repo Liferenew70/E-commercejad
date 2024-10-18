@@ -17,8 +17,8 @@
         </nav>
         <input type="text" placeholder="🔍 Rechercher un produit..." class="search-bar">
         <div class="cart-container">
-            <div class="cart-icon">🛒</div>
-            <span class="cart-count">0</span>
+            <div class="cart-icon" id="cart-icon">🛒</div>
+            <span class="cart-count"></span>
         </div>
     </header>
 
@@ -35,11 +35,20 @@
         </div>
     </section>
 
+    <div class="chart-modal">
+        <div>
+            <span id="chart-modal-close-btn">
+                &Cross;
+            </span>
+            Votre panier est vide !
+        </div>
+    </div>
+
     <footer>
         <div class="footer-content">
             <p>© 2024 Boutique de Qualité. Tous droits réservés.</p>
             <div class="social-links">
-                <a href="#">Facebook</a> | <a href="#">Twitter</a> | <a href="#">Instagram</a>
+                <a href="#">Facebook</a> - <a href="#">Twitter</a> - <a href="#">Instagram</a>
             </div>
         </div>
         <form class="newsletter">
